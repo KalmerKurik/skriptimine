@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+#tööaja skript
+echo "$HOSTNAME AT $(uptime)" | grep "," | cut -f 1 -d ","
+#
+#skriptimise lõpp
