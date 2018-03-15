@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#ajaskript
+date +"Täna on %A, %B %m, %Y" 
+date +"Kell on %R" 
+echo ""
+echo -n "Calendar of "
+cal
+#
+#skripti lõpp
