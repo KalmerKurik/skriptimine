@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#skripti algus
+echo -n "Sisesta aluskandiku pikkus ja laius: "
+read k_pikkus k_laius
+aluskandik=`expr $k_pikkus \* $k_laius`
+echo $aluskandik
+echo -n "Sisesta küpsise pikkus ja laius: "
+read pikkus laius
+kypsis=`expr $pikkus \* $laius`
+echo $kypsis
+echo -n "sisesta kihtide arv: "
+read kihid
+echo $kihid
+echo -n "Sisesta küpsiste arv pakis: "
+read k_arv
+echo $k_arv
+echo -n "Kui palju küpsiseid on ühes kihis "
+kihis=`expr $aluskandik / $kypsis`
+echo $kihis
+echo "Pakkide arv: "
+pakid=`expr $aluskandik / $kypsis \* $kihid / $k_arv`
+echo $pakid
+#
+#skripti lõpp
