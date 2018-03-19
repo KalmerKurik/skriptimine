@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#skripti algus
+echo -n "Sisesta reisijate arv bussis: "
+read reisijate_arv
+echo -n "Sisesta kohtade arv bussis: "
+read kohtade_arv
+t2idetud=`expr $reisijate_arv / $kohtade_arv`
+maha=`expr $reisijate_arv - $t2idetud \* $kohtade_arv`
+echo "Täidetud busse on $t2idetud" ja "Mahajäänud inimesi on $maha"
+#
+#skripti lõpp
