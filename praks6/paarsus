@@ -3,8 +3,7 @@
 #skripti algus
 if test $# -ne 1;
 then
-echo"Kasutamise seletus: "
-echo "$0 taisarv"
+echo "Skripti käivitamisel sisesta täisarv."
 else jaak=$(( $1 % 2 ))
 #
 #tingimus - kui jaak on null - arv on paaris
