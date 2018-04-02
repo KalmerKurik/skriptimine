@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#skripti algus
+echo -n "Sisesta suvaline täisarv: "
+read su_arv
+summa=0
+while [ $su_arv -gt 0 -o  $su_arv -lt 0 ]
+do
+arv=$(( $su_arv % 10 ))
+su_arv=$(( $su_arv / 10 ))
+summa=$(( $summa + $arv ))
+done
+echo "Arvu numbrite summa on: $summa
+"
+#
+#skripti lõpp
+#
